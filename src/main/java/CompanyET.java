@@ -48,7 +48,7 @@ public class CompanyET extends Company implements InvoiceIssue{
 
     public void printsCompanyData(){
         System.out.printf("The company %s is created on %s.%nIts Bulstat number is: %s.%nThe owner of the company is: %s%n" +
-                "Financial stat of the company is as follows:%nInitial capital is: %f BGN.%nActual capital is: %f BGN.%n",getCompanyName(), getDateOfCreation(), getBulstat(), getOwner(), getInitialCapital(), getActualCapital());
+                "Financial stat of the company is as follows:%nInitial capital is: %.2f BGN.%nActual capital is: %.2f BGN.%n",getCompanyName(), getDateOfCreation(), getBulstat(), getOwner(), getInitialCapital(), getActualCapital());
     }
 //why does it print profit?
     @Override
